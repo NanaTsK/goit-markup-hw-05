@@ -241,6 +241,35 @@ header .container {
 /* .menu-item {
 } */
 
+.active {
+  position: relative;
+}
+.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  bottom: -3px;
+  background: var(--color-ocean-pressed);
+  border-radius: 2px;
+}
+
+/* 
+.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    bottom: -1px;
+        bottom: -27px;
+
+    left: 0;
+}
+*/
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< HERO */
 .hero {
   padding-top: 188px;
