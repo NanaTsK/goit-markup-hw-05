@@ -19,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -65,7 +66,7 @@
           <h1 class="main-title title-theme-dark">
             Effective Solutions for Your Business
           </h1>
-          <button class="modal-btn-hero modal-btn" type="button">
+          <button class="modal-btn-hero modal-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -349,42 +350,42 @@
           <ul class="customers-list list">
             <li class="customers-item">
               <a href="" class="customers-icon-link link">
-                <svg class="customers-icon">
+                <svg class="customers-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-customer-1"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-icon-link link">
-                <svg class="customers-icon">
+                <svg class="customers-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-customer-2"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-icon-link link">
-                <svg class="customers-icon">
+                <svg class="customers-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-customer-3"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-icon-link link">
-                <svg class="customers-icon">
+                <svg class="customers-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-customer-4"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-icon-link link">
-                <svg class="customers-icon">
+                <svg class="customers-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-customer-5"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-icon-link link">
-                <svg class="customers-icon">
+                <svg class="customers-icon" width="104" height="56">
                   <use href="./images/sprite.svg#icon-customer-6"></use>
                 </svg>
               </a>
@@ -442,14 +443,16 @@
     </footer>
 
     <!-- Modal Window-->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn-close-icon">
-          <svg class="modal-close">
+        <button type="button" class="modal-btn-close" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/sprite.svg#icon-close-btn"></use>
           </svg>
         </button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+</body>
   </body>
 </html>
